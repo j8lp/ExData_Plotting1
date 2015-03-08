@@ -1,6 +1,6 @@
 source("ExData_Plotting1/ReadDataFunction.R")
 data = getData("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip")
-plot(data$Date, data$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub Metering")
+plot(data$Date, data$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
 points(data$Date, data$Sub_metering_2, col = "Red", type  = "l")
 points(data$Date, data$Sub_metering_3, col = "Blue", type = "l")
 legend("topright",lwd=c(2.5,2.5), col = c("black","Red","Blue"),legend = c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"))
